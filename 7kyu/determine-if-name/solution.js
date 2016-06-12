@@ -9,3 +9,9 @@ function showMe(yourID){
   }
   return true;
 }
+
+
+// best practices solution by lizq
+function showMe(yourID){
+  return /^[A-Z][a-z]*(-[A-Z][a-z]*)*$/.test(yourID);
+}
