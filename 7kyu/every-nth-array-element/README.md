@@ -1,4 +1,4 @@
-escription:
+Description:
 
 Create a method (JS: function) every which returns every nth element of an array.
 
