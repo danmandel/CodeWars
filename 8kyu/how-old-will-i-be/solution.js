@@ -9,3 +9,12 @@ function calculateAge(birthday,year) {
     } else if (dif===0){return "You were born this very year!"}
   
 }
+
+
+//shorter solution
+function calculateAge(birthday,year) {
+    var dif = year-birthday; // 2016-1994
+    if (dif > 0) return `You are ${dif} year${dif===1?'':'s'} old.`; 
+    else if (dif < 0) return `You will be born in ${-dif} year${dif===-1?'':'s'}.`
+    else return "You were born this very year!"
+}
