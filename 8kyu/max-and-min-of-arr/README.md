@@ -6,3 +6,6 @@ max([4,6,2,1,9,63,-134,566]) returns 566
 min([-52, 56, 30, 29, -54, 0, -110]) returns -110
 max([5]) returns 5
 min([42, 54, 65, 87, 0]) returns 0
+
+
+Link: https://www.codewars.com/kata/find-maximum-and-minimum-values-of-a-list/train/javascript
