@@ -9,6 +9,6 @@ function highAndLow(numbers){
 
 //top rated
 function highAndLow(numbers){
-  numbers = numbers.split(' ').map(Number); // .map(Number) technically not necesary for Math.max and Math.min
+  numbers = numbers.split(' ').map(Number); // .map(Number) technically not necessary for Math.max and Math.min
   return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
 }
