@@ -2,7 +2,6 @@ snail = function(array) {
     const snailArr = [];
     const n = array.length;
     var element;
-    var direction = 'right';
     var row;
     const popElement = function(row){
         element = array[row].pop();
@@ -34,39 +33,30 @@ snail = function(array) {
 
     row = 0;
     while (snailArr.length < n*n){
-        if (direction === 'right'){
-            shiftRow(row);
-            direction = 'down';
+        ///right
+        shiftRow(row);
+        row++;
+
+        //down
+        while (rowIsNotEmpty(row)){
+            popElement(row);
             row++;
         }
-
-        if (direction === 'down'){
-            while (rowIsNotEmpty(row)){
-                popElement(row);
-                row++;
-            }
-            direction = 'left';
+        row--;
+        
+        //left
+        popRow(row);
+        row--;
+        
+        //up
+        while (rowIsNotEmpty(row)){
+            shiftElement(row);
             row--;
         }
-
-        if (direction === 'left'){
-            popRow(row);
-            direction = 'up';
-            row--;
-        }
-
-        if (direction === 'up'){
-            while (rowIsNotEmpty(row)){
-                shiftElement(row)
-                row--;
-            }
-            direction = 'right';
-            row++;
-        }
+        row++;
     }
     return snailArr;
 };
-
 
 
 // top rated
