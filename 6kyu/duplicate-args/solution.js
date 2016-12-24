@@ -11,7 +11,7 @@ function solution(){
 
 //one line solution
 function solution(){
-    return [...arguments].length !== [...new Set([...arguments])].length;
+    return arguments.length !== [...new Set(arguments)].length;
 }
 
 //top rated solution
