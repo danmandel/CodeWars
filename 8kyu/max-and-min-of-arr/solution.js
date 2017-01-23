@@ -14,3 +14,10 @@ var max = function(list){
     });
     return result;
 }
+
+const min = list => list.reduce((p,c) => p < c ? p : c, list[0]);
+const max = list => list.reduce((p,c) => p > c ? p : c, list[0]);
+
+//top rated
+const min = list => Math.min(...list);
+const max = list => Math.max(...list);
