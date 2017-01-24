@@ -15,3 +15,11 @@ function positiveSum(arr) {
     return result;
     
 }
+
+//updated solution
+const countPositivesSumNegatives = input => input && input.length
+    ? input.reduce((arr, current) => {
+        current > 0 ? arr[0]++ : arr[1] += current
+        return arr;
+        }, [0, 0])
+    : [];
