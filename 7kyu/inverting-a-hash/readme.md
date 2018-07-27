@@ -1,10 +1,10 @@
-#Link
+##Link
 https://www.codewars.com/kata/inverting-a-hash/train/javascript
 
-#Summary
+##Summary
 Given a Hash made up of keys and values, invert the hash by swapping them.
 
-#Examples
+##Examples
 Given:
 
   { a: '1',
@@ -29,6 +29,6 @@ Return:
   { bar:   'foo',
     world: 'hello' }
 
-#Notes
+##Notes
 -Keys and values may be of any type appropriate for use as a key.
 -All hashes provided as input will have unique values, so the inversion is involutive. In other words, do not worry about identical values stored under different keys.
