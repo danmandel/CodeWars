@@ -1,0 +1,21 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "babel-preset-env"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.1",
+    "regenerator-runtime": "^0.12.0"
+  }
+}
