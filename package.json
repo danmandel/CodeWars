@@ -8,8 +8,12 @@
       "babel-preset-env"
     ]
   },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
